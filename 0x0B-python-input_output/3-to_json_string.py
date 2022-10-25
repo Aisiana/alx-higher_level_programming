@@ -1,6 +1,15 @@
 #!/usr/bin/python3
-def write_file(filename="", text=""):
 
-    with open(filename, mode='w', encoding='utf-8') as f:
+"""This module defines a string-to-JSON function"""
 
-        return f.write(text)
+import json
+
+
+
+
+
+def to_json_string(my_obj):
+
+    """Returns the JSON representation of a string object"""
+
+    return json.dumps(my_obj)
